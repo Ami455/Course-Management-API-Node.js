@@ -1,4 +1,3 @@
-# course-CRUD-Node.js
 # Course Management API
 
 This is a RESTful API for managing courses, built with Node.js, Express.js, and MongoDB.
