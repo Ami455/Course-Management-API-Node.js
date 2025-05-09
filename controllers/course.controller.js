@@ -3,6 +3,7 @@ const {inputSchema,updateSchema} = require("../validator/course.validator");
 
 const findAllCourses = async (req, res) => {
     try {
+        console.log("find all courses in this fun")
         const courses = await Course.find();
         res.status(200).json({ courses });
 

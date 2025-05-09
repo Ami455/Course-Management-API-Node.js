@@ -7,7 +7,10 @@ const courseRoutes = require("./routes/course.route")
 
 app.use(express.json()); //parser
 app.use("/api/courses", courseRoutes);
-
+app.get("/", (req, res) => {
+    res.send("API is running");
+  });
+  
 app.listen(port, async (error) => {
     connection()
         .then(() => { console.log(`MongoDB cennected successfully! port num ${port}`) }).
